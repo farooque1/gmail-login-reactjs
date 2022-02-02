@@ -8,6 +8,7 @@ const clientId =
   '501269022844-828ud9cmjh7uuv5ei33a7m243fcq6lnh.apps.googleusercontent.com';
 
 function LoginHooks() {
+
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
     alert(
@@ -35,7 +36,6 @@ function LoginHooks() {
 
   return (
     <button onClick={signIn} className="button">
-      <img src="icons/google.svg" alt="google login" className="icon"></img>
 
       <span className="buttonText">Sign in with Google</span>
     </button>
